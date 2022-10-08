@@ -7,7 +7,6 @@ stack_t *head = NULL;
  * @argv: list of arguments
  * Return: always 0
  */
-
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
@@ -79,5 +78,4 @@ void add_to_queue(stack_t **new_node, __attribute__((unused))unsigned int ln)
 
 	tmp->next = *new_node;
 	(*new_node)->prev = tmp;
-
 }
